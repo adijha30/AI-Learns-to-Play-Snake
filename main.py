@@ -2,8 +2,6 @@ import pygame
 import os
 import random
 import time
-# import sys
-# import math
 import neat
 
 random.seed(434)
@@ -85,29 +83,6 @@ class Snake():
         self.score = 0
         self.life = life
 
-    # def update(self):
-    #     self.body.append(self.head)
-    #     for i in range(len(self.body) - 1):
-    #         self.body[i].x = self.body[i + 1].x
-    #         self.body[i].y = self.body[i + 1].y
-
-    #     # updating the location of the head
-    #     if self.dir == 'r':
-    #         xdir = 1
-    #         ydir = 0
-    #     if self.dir == 'l':
-    #         xdir = -1
-    #         ydir = 0
-    #     if self.dir == 'u':
-    #         xdir = 0
-    #         ydir = 1
-    #     if self.dir == 'd':
-    #         xdir = 0
-    #         ydir = -1
-    #     self.head.x += xdir * BLOCK_SIZE
-    #     self.head.y += ydir * BLOCK_SIZE
-    #     self.body.remove(self.head)
-    #     self.len = 1 + len(self.body)
     def update(self):
 
         if self.dir == 'r':
